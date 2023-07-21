@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - AI Wealth Creation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .navbar,
+      .footer {
+        background-color: #add8e6; /* Light blue */
+      }
+      .navbar-brand,
+      .navbar-nav .nav-link,
+      .footer a {
+        color: #00008b; /* Dark blue */
+      }
+      .navbar-nav .nav-link:hover,
+      .footer a:hover {
+        color: #000055; /* Darker blue for hover effect */
+      }
+      @media (max-width: 576px) {
+        .small-text {
+          font-size: 0.75rem;
+        }
+      }
+      .login-container {
+        min-height: calc(
+          100vh - 56px - 56px
+        ); /* Subtract heights of navbar and footer */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .login-form {
+        margin-top: 5%; /* Adjust this value */
+        padding: 2em; /* Add padding to the form */
+        border: 1px solid #add8e6; /* Add a border to the form */
+        border-radius: 1em; /* Round the corners of the form */
+      }
+      .form-control {
+        margin-bottom: 1em; /* Add space below each form input */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="login-container">
+      <form class="login-form text-center">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Email address"
+          required
+          autofocus
+        />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Sign in
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Copyright &copy; 2023 AI Wealth Creation</span>
+        <span class="text-muted float-right small-text">
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
